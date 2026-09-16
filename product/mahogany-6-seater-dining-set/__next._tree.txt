@@ -1,0 +1,5 @@
+:HL["/kiku-next/_next/static/chunks/3vfahntl__48b.css","style"]
+:HL["/kiku-next/_next/static/media/75affa71d1e2f6a7-s.p.17-aodiw50953.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/kiku-next/_next/static/media/b8256b1b99fdd790-s.p.1m13j5pjyugba.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/kiku-next/_next/static/media/c3191a2e06136a6d-s.p.2eby0yrg01v4v.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"product","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"mahogany-6-seater-dining-set","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"N-D_Btmk_P2xZWv8uAPfq"}
