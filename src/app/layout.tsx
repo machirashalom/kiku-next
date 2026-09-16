@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Zilla_Slab, Archivo } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 import "./globals.css";
 
 const zilla = Zilla_Slab({
@@ -22,7 +25,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${zilla.variable} ${archivo.variable}`}>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body antialiased">
+        <Header />
+        <main className="pb-14 md:pb-0">{children}</main>
+        <Footer />
+        <WhatsAppFloat />
+      </body>
     </html>
   );
 }
