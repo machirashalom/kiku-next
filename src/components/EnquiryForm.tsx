@@ -36,6 +36,7 @@ export default function EnquiryForm({ variant }: { variant: Variant }) {
   const [location, setLocation] = useState("");
   const [type, setType] = useState("");
   const [extra, setExtra] = useState("");
+  const [budget, setBudget] = useState("");
   const [details, setDetails] = useState("");
 
   const typeOptions = variant === "custom" ? FURNITURE_TYPES : INTERESTS;
@@ -51,6 +52,9 @@ export default function EnquiryForm({ variant }: { variant: Variant }) {
       `Town: ${location}`,
       type && `${variant === "custom" ? "Item" : "Interested in"}: ${type}`,
       extra && !extra.startsWith("Not sure") && `${extraLabel}: ${extra}`,
+      variant === "custom" &&
+        budget &&
+        `Budget: ${budget}`,
       details && `Details: ${details}`,
     ].filter(Boolean);
     window.open(
@@ -151,6 +155,23 @@ export default function EnquiryForm({ variant }: { variant: Variant }) {
           ))}
         </select>
       </div>
+
+      {variant === "custom" && (
+        <div>
+          <label htmlFor="custom-budget" className="mb-1 block text-sm font-medium text-ink">
+            Budget range (optional)
+          </label>
+          <input
+            id="custom-budget"
+            type="text"
+            autoComplete="off"
+            placeholder="e.g. KSh 50,000 – 100,000…"
+            className={inputClass}
+            value={budget}
+            onChange={(event) => setBudget(event.target.value)}
+          />
+        </div>
+      )}
 
       <div>
         <label htmlFor={`${variant}-details`} className="mb-1 block text-sm font-medium text-ink">

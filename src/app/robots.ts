@@ -5,6 +5,8 @@ export const dynamic = "force-static";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: "*", allow: "/" },
-    sitemap: "https://machirashalom.github.io/kiku/sitemap.xml",
+    sitemap: `https://machirashalom.github.io${
+      process.env.NEXT_PUBLIC_BASE_PATH || "/kiku"
+    }/sitemap.xml`,
   };
 }

@@ -26,7 +26,7 @@ export default function ProcessSteps() {
     <ol className="mt-8 grid gap-px border border-ink bg-ink sm:grid-cols-2 lg:grid-cols-4">
       {STEPS.map((step) => (
         <li key={step.number} className="bg-papyrus px-5 py-6">
-          <p className="font-display text-2xl font-bold text-mvule">
+          <p className="font-display text-2xl font-bold text-ink/30">
             {step.number}
           </p>
           <h3 className="mt-2 font-display text-lg font-semibold text-ink">

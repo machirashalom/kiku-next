@@ -4,7 +4,9 @@ import { categories, products } from "@/lib/data";
 
 export const dynamic = "force-static";
 
-const BASE = "https://machirashalom.github.io/kiku";
+const BASE = `https://machirashalom.github.io${
+  process.env.NEXT_PUBLIC_BASE_PATH || "/kiku"
+}`;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [

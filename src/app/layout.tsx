@@ -17,8 +17,12 @@ const archivo = Archivo({
   variable: "--font-archivo",
 });
 
+const SITE_BASE = `https://machirashalom.github.io${
+  process.env.NEXT_PUBLIC_BASE_PATH || "/kiku"
+}`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://machirashalom.github.io/kiku"),
+  metadataBase: new URL(SITE_BASE),
   title: "Kiku Studio — Handmade Mvule & Mahogany Furniture, Nairobi",
   description:
     "Handmade Mvule and Mahogany furniture built to order in Nairobi — sofa sets, beds, dining sets, TV stands and coffee tables. Delivered across Kenya. Get a price on WhatsApp.",
