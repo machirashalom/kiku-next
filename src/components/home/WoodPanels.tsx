@@ -1,15 +1,16 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 const WOODS = [
   {
     name: "Mvule",
-    image: "/images/wood-mvule.jpg",
+    image: asset("/images/wood-mvule.jpg"),
     alt: "Mvule hardwood grain",
     copy: "Known for its strength, rich grain and long-lasting durability. Ideal for statement pieces that withstand daily use — beds, sofas and dining tables.",
   },
   {
     name: "Mahogany",
-    image: "/images/wood-mahogany.jpg",
+    image: asset("/images/wood-mahogany.jpg"),
     alt: "Mahogany hardwood grain",
     copy: "Elegant, smooth and timeless. Mahogany brings warmth and a premium finish to sofas, beds, TV stands and coffee tables.",
   },

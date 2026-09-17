@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import Link from "next/link";
 
 import Cta from "@/components/home/Cta";
@@ -18,7 +19,7 @@ export default function AboutPage() {
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div className="relative h-72 md:h-96">
             <Image
-              src="/images/workshop.jpg"
+              src={asset("/images/workshop.jpg")}
               alt="Inside the Kiku Studio workshop in Nairobi"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"

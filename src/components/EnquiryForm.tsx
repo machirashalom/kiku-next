@@ -37,6 +37,7 @@ export default function EnquiryForm({ variant }: { variant: Variant }) {
   const [type, setType] = useState("");
   const [extra, setExtra] = useState("");
   const [budget, setBudget] = useState("");
+  const [size, setSize] = useState("");
   const [details, setDetails] = useState("");
 
   const typeOptions = variant === "custom" ? FURNITURE_TYPES : INTERESTS;
@@ -55,6 +56,9 @@ export default function EnquiryForm({ variant }: { variant: Variant }) {
       variant === "custom" &&
         budget &&
         `Budget: ${budget}`,
+      variant === "custom" &&
+        size &&
+        `Approximate size: ${size}`,
       details && `Details: ${details}`,
     ].filter(Boolean);
     window.open(
@@ -157,20 +161,36 @@ export default function EnquiryForm({ variant }: { variant: Variant }) {
       </div>
 
       {variant === "custom" && (
-        <div>
-          <label htmlFor="custom-budget" className="mb-1 block text-sm font-medium text-ink">
-            Budget range (optional)
-          </label>
-          <input
-            id="custom-budget"
-            type="text"
-            autoComplete="off"
-            placeholder="e.g. KSh 50,000 – 100,000…"
-            className={inputClass}
-            value={budget}
-            onChange={(event) => setBudget(event.target.value)}
-          />
-        </div>
+        <>
+          <div>
+            <label htmlFor="custom-budget" className="mb-1 block text-sm font-medium text-ink">
+              Budget range (optional)
+            </label>
+            <input
+              id="custom-budget"
+              type="text"
+              autoComplete="off"
+              placeholder="e.g. KSh 50,000 – 100,000…"
+              className={inputClass}
+              value={budget}
+              onChange={(event) => setBudget(event.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="custom-size" className="mb-1 block text-sm font-medium text-ink">
+              Approximate size (optional)
+            </label>
+            <input
+              id="custom-size"
+              type="text"
+              autoComplete="off"
+              placeholder="e.g. 3-seater, 6×6 bed, 200cm table…"
+              className={inputClass}
+              value={size}
+              onChange={(event) => setSize(event.target.value)}
+            />
+          </div>
+        </>
       )}
 
       <div>

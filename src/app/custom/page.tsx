@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 import Cta from "@/components/home/Cta";
 import EnquiryForm from "@/components/EnquiryForm";
@@ -25,7 +26,7 @@ export default function CustomPage() {
         <figure className="mt-10">
           <div className="relative h-64 w-full md:h-96">
             <Image
-              src="/images/workshop.jpg"
+              src={asset("/images/workshop.jpg")}
               alt="Handmade furniture being built at the Kiku Studio workshop in Nairobi"
               fill
               sizes="100vw"

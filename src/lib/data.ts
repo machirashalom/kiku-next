@@ -1,3 +1,5 @@
+import { asset } from "./asset";
+
 export type CategorySlug = "sofas" | "beds" | "dining" | "tv-coffee";
 
 export type Category = {
@@ -32,25 +34,25 @@ export const categories: Category[] = [
     slug: "sofas",
     name: "Sofa Sets & L-Seats",
     blurb: "Handmade Mvule and Mahogany sofa sets and L-seats",
-    image: "/images/sofa.jpg",
+    image: asset("/images/sofa.jpg"),
   },
   {
     slug: "beds",
     name: "Beds",
     blurb: "Handmade hardwood beds from Mvule and Mahogany",
-    image: "/images/bed.jpg",
+    image: asset("/images/bed.jpg"),
   },
   {
     slug: "dining",
     name: "Dining Sets",
     blurb: "Handmade Mvule and Mahogany dining sets",
-    image: "/images/dining.jpg",
+    image: asset("/images/dining.jpg"),
   },
   {
     slug: "tv-coffee",
     name: "TV Stands & Coffee Tables",
     blurb: "Handmade TV stands and coffee tables",
-    image: "/images/tvstand.jpg",
+    image: asset("/images/tvstand.jpg"),
   },
 ];
 
@@ -62,7 +64,7 @@ export const products: Product[] = [
     wood: "Mvule",
     sizes: "Made to your measurements",
     leadTime: "We confirm the build time when you order",
-    image: "/images/sofa-l.jpg",
+    image: asset("/images/sofa-l.jpg"),
     description:
       "Corner sofa built to order from solid Mvule. You choose the size, fabric and finish, and we build it at our Nairobi workshop.",
   },
@@ -73,7 +75,7 @@ export const products: Product[] = [
     wood: "Mahogany",
     sizes: "Standard 3-seater",
     leadTime: "We confirm the build time when you order",
-    image: "/images/sofa.jpg",
+    image: asset("/images/sofa.jpg"),
     description:
       "A standard 3-seater sofa set in premium Mahogany, made to your size and fabric choice.",
   },
@@ -84,7 +86,7 @@ export const products: Product[] = [
     wood: "Mvule",
     sizes: "Standard 6x6",
     leadTime: "We confirm the build time when you order",
-    image: "/images/bed.jpg",
+    image: asset("/images/bed.jpg"),
     description:
       "Standard 6x6 bed built to order from solid Mvule. Message us your town and we'll confirm the price and delivery cost.",
   },
@@ -95,7 +97,7 @@ export const products: Product[] = [
     wood: "Mahogany",
     sizes: "Standard 5x6",
     leadTime: "We confirm the build time when you order",
-    image: "/images/bed-2.jpg",
+    image: asset("/images/bed-2.jpg"),
     description:
       "Standard 5x6 bed in rich Mahogany, built to order with your choice of design and finish.",
   },
@@ -106,7 +108,7 @@ export const products: Product[] = [
     wood: "Mahogany",
     sizes: "Table with six seats",
     leadTime: "We confirm the build time when you order",
-    image: "/images/dining-2.jpg",
+    image: asset("/images/dining-2.jpg"),
     description:
       "Dining table with six seats in premium Mahogany, made to order. Ask us for the price for your town.",
   },
@@ -117,7 +119,7 @@ export const products: Product[] = [
     wood: "Mvule",
     sizes: "Table with four seats",
     leadTime: "We confirm the build time when you order",
-    image: "/images/dining.jpg",
+    image: asset("/images/dining.jpg"),
     description:
       "Compact dining set with four seats in solid Mvule, made to your size and finish.",
   },
@@ -128,7 +130,7 @@ export const products: Product[] = [
     wood: "Mahogany",
     sizes: "Built to your TV size",
     leadTime: "We confirm the build time when you order",
-    image: "/images/tvstand.jpg",
+    image: asset("/images/tvstand.jpg"),
     description:
       "TV stand in premium Mahogany, built to fit your TV size and living room style.",
   },
@@ -139,7 +141,7 @@ export const products: Product[] = [
     wood: "Mvule",
     sizes: "Built to your size",
     leadTime: "We confirm the build time when you order",
-    image: "/images/coffee.jpg",
+    image: asset("/images/coffee.jpg"),
     description: "Coffee table in solid Mvule, made to your size and finish.",
   },
 ];

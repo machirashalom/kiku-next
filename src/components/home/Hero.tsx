@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { asset } from "@/lib/asset";
 
 const WHATSAPP_QUOTE =
   "https://wa.me/254741205945?text=Hello%20Kiku%20Studio%2C%20I%27d%20like%20a%20price%20and%20delivery%20quote.%20My%20town%20is%3A%20";
@@ -9,7 +10,7 @@ export default function Hero() {
     <section className="relative">
       <div className="relative h-[70vh] min-h-[480px] w-full">
         <Image
-          src="/images/hero.jpg"
+          src={asset("/images/hero.jpg")}
           alt="Handmade hardwood furniture crafted by Kiku Studio"
           fill
           priority

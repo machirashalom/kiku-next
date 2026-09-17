@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 import Cta from "@/components/home/Cta";
 
@@ -74,7 +75,7 @@ export default function ShowroomPage() {
 
           <div className="relative h-72 md:h-96">
             <Image
-              src="/images/showroom.jpg"
+              src={asset("/images/showroom.jpg")}
               alt="The Kiku Studio showroom on Getathuru Road, Nairobi"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"

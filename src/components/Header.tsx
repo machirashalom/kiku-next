@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const NAV = [
   { href: "/", label: "Home" },
@@ -17,6 +18,7 @@ const WHATSAPP_URL =
 
 export default function Header() {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="border-b border-shaving bg-papyrus">
@@ -28,11 +30,13 @@ export default function Header() {
           Kiku Studio
         </Link>
 
-        <input type="checkbox" id="menu-toggle" className="peer hidden" />
-        <label
-          htmlFor="menu-toggle"
+        <button
+          type="button"
           className="cursor-pointer md:hidden"
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-controls="site-nav"
+          onClick={() => setMenuOpen((open) => !open)}
         >
           <svg
             viewBox="0 0 24 24"
@@ -42,17 +46,20 @@ export default function Header() {
             stroke="currentColor"
             strokeWidth="2"
             strokeLinecap="round"
-            className="text-ink"
+            className="text-ink focus-visible:outline-2 focus-visible:outline-upholstery"
             aria-hidden="true"
           >
             <line x1="3" y1="6" x2="21" y2="6" />
             <line x1="3" y1="12" x2="21" y2="12" />
             <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
-        </label>
+        </button>
 
         <nav
-          className="fixed inset-x-0 top-[65px] hidden border-b border-shaving bg-papyrus px-4 py-4 peer-checked:block md:static md:block md:border-0 md:p-0"
+          id="site-nav"
+          className={`${
+            menuOpen ? "block" : "hidden"
+          } fixed inset-x-0 top-[65px] border-b border-shaving bg-papyrus px-4 py-4 md:static md:block md:border-0 md:p-0`}
           aria-label="Main navigation"
         >
           <ul className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
@@ -66,6 +73,7 @@ export default function Header() {
                   <Link
                     href={item.href}
                     aria-current={active ? "page" : undefined}
+                    onClick={() => setMenuOpen(false)}
                     className={`pb-1 focus-visible:outline-2 focus-visible:outline-upholstery ${
                       active
                         ? "border-b-2 border-mvule font-medium text-ink"

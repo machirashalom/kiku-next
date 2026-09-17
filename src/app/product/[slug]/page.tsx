@@ -76,7 +76,7 @@ export default async function ProductPage({
 
           <a
             href={`https://wa.me/254741205945?text=${encodeURIComponent(
-              `Hello Kiku Studio, I'd like a price for the ${product.name}. My town is: `
+              `Hello Kiku Studio, I'm interested in the ${product.name}. My town is: `
             )}`}
             target="_blank"
             rel="noopener"

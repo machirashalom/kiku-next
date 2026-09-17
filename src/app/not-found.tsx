@@ -5,7 +5,7 @@ export default function NotFound() {
     <section className="mx-auto flex max-w-6xl flex-col items-center px-4 py-24 text-center md:px-6">
       <h1 className="font-display text-6xl font-bold text-ink">404</h1>
       <p className="mt-4 max-w-md text-ink/70">
-        The page you are looking for does not exist or has moved.
+        Sorry — this page doesn&apos;t exist or has moved.
       </p>
       <Link
         href="/"
