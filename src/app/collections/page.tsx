@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: "Collections — Kiku Studio",
   description:
     "Handmade Mvule and Mahogany furniture: sofa sets, beds, dining sets, TV stands and coffee tables. Built to order in Nairobi.",
+  alternates: { canonical: "./" },
 };
+
 
 export default function CollectionsPage() {
   return (

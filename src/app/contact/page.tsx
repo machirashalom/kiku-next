@@ -8,7 +8,8 @@ import EnquiryForm from "@/components/EnquiryForm";
 export const metadata: Metadata = {
   title: "Contact — Kiku Studio",
   description:
-    "WhatsApp, phone or email — we reply with prices and delivery quotes.",
+    "Message Kiku Studio on WhatsApp, phone or email for prices and delivery quotes. Workshop and showroom on Getathuru Road, Nairobi.",
+  alternates: { canonical: "./" },
 };
 
 const WHATSAPP_URL = "https://wa.me/254741205945";

@@ -19,6 +19,7 @@ export async function generateMetadata({
   return {
     title: `${product.name} — Kiku Studio`,
     description: product.description,
+    alternates: { canonical: "./" },
   };
 }
 

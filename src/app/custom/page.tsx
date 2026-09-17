@@ -10,7 +10,9 @@ export const metadata: Metadata = {
   title: "Custom Orders — Kiku Studio",
   description:
     "Your design, built to your size in Mvule or Mahogany. Made to order at our Nairobi workshop, delivered across Kenya.",
+  alternates: { canonical: "./" },
 };
+
 
 export default function CustomPage() {
   return (

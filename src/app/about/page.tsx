@@ -10,7 +10,9 @@ export const metadata: Metadata = {
   title: "About — Kiku Studio",
   description:
     "Kiku Studio builds handmade Mvule and Mahogany furniture to order at our Nairobi workshop and delivers across Kenya.",
+  alternates: { canonical: "./" },
 };
+
 
 export default function AboutPage() {
   return (

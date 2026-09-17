@@ -19,7 +19,7 @@ export default function Hero() {
         />
       </div>
       <div className="hero-reveal absolute bottom-0 left-0 max-w-2xl bg-ink px-6 py-8 text-papyrus md:px-10 md:py-10">
-        <h1 className="font-display text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+        <h1 className="text-balance font-display text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
           Handmade Mvule &amp; Mahogany furniture, built to order in Nairobi
         </h1>
         <p className="mt-4 max-w-xl text-sm leading-relaxed md:text-base">

@@ -33,25 +33,29 @@ export const categories: Category[] = [
   {
     slug: "sofas",
     name: "Sofa Sets & L-Seats",
-    blurb: "Handmade Mvule and Mahogany sofa sets and L-seats",
+    blurb:
+      "Handmade Mvule and Mahogany sofa sets and L-seats, built to your size in Nairobi and delivered across Kenya.",
     image: asset("/images/sofa.jpg"),
   },
   {
     slug: "beds",
     name: "Beds",
-    blurb: "Handmade hardwood beds from Mvule and Mahogany",
+    blurb:
+      "Handmade hardwood beds in Mvule and Mahogany — 5x6 and 6x6, built to order in Nairobi and delivered countrywide.",
     image: asset("/images/bed.jpg"),
   },
   {
     slug: "dining",
     name: "Dining Sets",
-    blurb: "Handmade Mvule and Mahogany dining sets",
+    blurb:
+      "Handmade Mvule and Mahogany dining sets — 4 and 6 seaters built to order, delivered across Kenya. Prices on WhatsApp.",
     image: asset("/images/dining.jpg"),
   },
   {
     slug: "tv-coffee",
     name: "TV Stands & Coffee Tables",
-    blurb: "Handmade TV stands and coffee tables",
+    blurb:
+      "Handmade TV stands and coffee tables in solid hardwood, built to order in Nairobi and delivered across Kenya.",
     image: asset("/images/tvstand.jpg"),
   },
 ];

@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: "Showroom — Kiku Studio",
   description:
     "Visit the Kiku Studio showroom on Getathuru Road, Nairobi — see the furniture in person, or message us for photos and prices.",
+  alternates: { canonical: "./" },
 };
+
 
 export default function ShowroomPage() {
   return (
