@@ -3,7 +3,6 @@ import { Zilla_Slab, Archivo } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-import { asset } from "@/lib/asset";
 import "./globals.css";
 
 const zilla = Zilla_Slab({
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
     title: "Kiku Studio — Handmade Mvule & Mahogany Furniture, Nairobi",
     description:
       "Handmade Mvule and Mahogany furniture built to order in Nairobi. Delivered across Kenya. Get a price on WhatsApp.",
-    images: [asset("/images/og-share.jpg")],
+    images: ["images/og-share.jpg"],
   },
   twitter: {
     card: "summary_large_image",
