@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="mt-6 flex flex-wrap gap-3">
           <Link
             href="/collections"
-            className="bg-papyrus px-5 py-3 text-sm font-medium text-ink hover:bg-shaving focus-visible:outline-2 focus-visible:outline-papyrus"
+            className="bg-papyrus px-5 py-3.5 text-sm font-medium text-ink hover:bg-shaving focus-visible:outline-2 focus-visible:outline-papyrus"
           >
             Explore the collections
           </Link>
@@ -38,7 +38,7 @@ export default function Hero() {
             href={WHATSAPP_QUOTE}
             target="_blank"
             rel="noopener"
-            className="border border-shaving px-5 py-3 text-sm font-medium text-papyrus hover:bg-upholstery focus-visible:outline-2 focus-visible:outline-papyrus"
+            className="border border-shaving px-5 py-3.5 text-sm font-medium text-papyrus hover:bg-upholstery focus-visible:outline-2 focus-visible:outline-papyrus"
           >
             WhatsApp us
           </a>

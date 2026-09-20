@@ -5,7 +5,7 @@ const WOODS = [
   {
     name: "Mvule",
     image: asset("/images/wood-mvule.jpg"),
-    alt: "Mvule hardwood grain",
+    alt: "Mvule hardwood — L-shaped sofa with visible grain",
     copy: "Known for its strength, rich grain and long-lasting durability. Ideal for statement pieces that withstand daily use — beds, sofas and dining tables.",
   },
   {
@@ -38,11 +38,11 @@ export default function WoodPanels() {
               sizes="(min-width: 768px) 50vw, 100vw"
               className="object-cover"
             />
-            <div className="absolute inset-x-0 bottom-0 bg-ink/90 px-6 py-5">
+            <div className="absolute inset-x-0 bottom-0 bg-ink/80 px-6 py-5">
               <h3 className="font-display text-2xl font-semibold">
                 {wood.name}
               </h3>
-              <p className="mt-1 text-sm leading-relaxed text-papyrus/85">
+              <p className="mt-1 text-sm leading-relaxed text-papyrus">
                 {wood.copy}
               </p>
             </div>

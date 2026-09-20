@@ -23,7 +23,7 @@ const STEPS = [
 
 export default function ProcessSteps() {
   return (
-    <ol className="mt-8 grid gap-px border border-ink bg-ink sm:grid-cols-2 lg:grid-cols-4">
+    <ol className="mt-8 grid gap-px border border-mvule bg-mvule sm:grid-cols-2 lg:grid-cols-4">
       {STEPS.map((step) => (
         <li key={step.number} className="bg-papyrus px-5 py-6">
           <p aria-hidden="true" className="font-display text-2xl font-bold text-ink/60">

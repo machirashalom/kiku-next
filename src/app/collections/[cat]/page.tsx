@@ -82,13 +82,13 @@ export default async function CategoryPage({
                   )}`}
                   target="_blank"
                   rel="noopener"
-                  className="bg-upholstery px-5 py-2.5 text-sm font-medium text-papyrus hover:bg-ink focus-visible:outline-2 focus-visible:outline-upholstery"
+                  className="bg-upholstery px-5 py-3 text-sm font-medium text-papyrus hover:bg-ink focus-visible:outline-2 focus-visible:outline-upholstery"
                 >
                   Get the price on WhatsApp
                 </a>
                 <Link
                   href={`/product/${product.slug}`}
-                  className="border border-ink px-5 py-2.5 text-sm font-medium text-ink hover:bg-ink hover:text-papyrus focus-visible:outline-2 focus-visible:outline-upholstery"
+                  className="border border-ink px-5 py-3 text-sm font-medium text-ink hover:bg-ink hover:text-papyrus focus-visible:outline-2 focus-visible:outline-upholstery"
                 >
                   View details
                 </Link>

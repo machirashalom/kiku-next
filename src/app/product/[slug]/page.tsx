@@ -81,7 +81,7 @@ export default async function ProductPage({
             )}`}
             target="_blank"
             rel="noopener"
-            className="mt-6 inline-block bg-upholstery px-6 py-3 text-sm font-medium text-papyrus hover:bg-ink focus-visible:outline-2 focus-visible:outline-upholstery"
+            className="mt-6 inline-block bg-upholstery px-6 py-3.5 text-sm font-medium text-papyrus hover:bg-ink focus-visible:outline-2 focus-visible:outline-upholstery"
           >
             Get the price on WhatsApp
           </a>

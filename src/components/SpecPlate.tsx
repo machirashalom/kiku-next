@@ -26,7 +26,7 @@ export default function SpecPlate({
   };
 
   return (
-    <dl className="grid grid-cols-2 gap-px border border-ink bg-ink md:grid-cols-4">
+    <dl className="grid grid-cols-2 gap-px border border-mvule bg-mvule md:grid-cols-4">
       {FIELDS.map((field) => (
         <div key={field.key} className="bg-papyrus px-4 py-3">
           <dt className="text-xs text-ink/70">{field.label}</dt>
